@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+    <head>
+        
+
+        <script>
+            
+
+            var fullName = prompt("Enter your Full Name");
+            var dte = prompt("Enter your Date of Birth");
+            var mnth = prompt("Enter your month of birthday");
+            var yer = Number(prompt("Enter your year of birthday"));
+
+            console.log("Hello " + fullName + ", Good Morning");
+
+            
+            var dob = new Date(yer + " " + mnth + " " + dte);
+            console.log("Your Date of Birth is: " + dob);
+
+            
+            var nowdate = new Date();
+                    
+            var yearDiff = nowdate.getFullYear() - yer;
+        
+
+            var mntDiff = (nowdate.getTime() - dob.getTime())/(1000*60*60*24*365*12);
+            mntDiff = Math.round(mntDiff);
+        
+            console.log("You are " +yearDiff +" years " +mntDiff+" Month")
+
+            
+            var timeDiff = nowdate.getTime() - dob.getTime();
+            var days = timeDiff/(1000*60*60*24);
+            days = Math.round(days);
+            console.log("your age in Days " +days);
+
+            
+            var nextdob = new Date((yer+1) + " " + mnth + " " + dte);
+            console.log("Your next Date of Birth is: " + nextdob);
+            
+            var timeDiff2 = nextdob.getTime() - nowdate.getTime();
+            var days2 = timeDiff2/(1000*60*60*24);
+            days2 = Math.round(days2);      
+            console.log("Days Left in next Birthday " +days2);
+
+        </script>
+    </head>
+
+    <body>
+        <h1>Date, Age</h1>
+    </body>
+</html>

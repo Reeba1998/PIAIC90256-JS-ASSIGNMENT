@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var courses=[];
+            var co=[];
+            for(var i=0; i<5;i++){
+                courses.push( prompt('enter the name of course'+(i+1)));
+
+            } 
+            alert(courses);
+
+            for(var i=0; i<5;i++){
+             co[i]=  prompt(courses[i],courses[i]);
+           courses.splice(i,1,co[i]);
+                
+            }
+            alert(courses);
+
+        </script>
+    </head>
+</html>

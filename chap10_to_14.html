@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input{
+                display: block;
+                margin-top: 10px;
+            }
+            #cal{
+                margin-left: 600px;
+                
+            
+            }
+            
+        </style>
+        <script>
+            function cal(){
+                num1=parseFloat(document.getElementById("num1").value);
+                num2=parseFloat(document.getElementById("num2").value);
+                op=document.getElementById('op').value;
+                
+                if (op == '-') {
+    result = num1 - num2;
+}
+else if (op =='+') {
+    result = num1 + num2;
+}
+else if (op == '*') {
+    result = num1 * num2;
+}
+else if(op == '/'){
+    result = num1 / num2;
+}
+else if(op == '%'){
+    result = num1 % num2;
+}
+
+
+alert(num1+op+num2 +"is equal to" + result);
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <div id="cal"> 
+Enter First No <input type="text" id="num1" required/> 
+Enter Second No<input type="text" id="num2" required/>
+Enter OPerator ('+','-','*','/')<input type="text" id="op"  required/>
+<input type="button" onclick="cal();"  value="calculate"/>
+    </div>
+    </body>
+</html>

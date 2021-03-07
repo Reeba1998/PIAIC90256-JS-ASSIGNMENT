@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input{
+     display: block;
+                margin-top: 10px;
+            }
+            #cal{
+                margin-left: 600px;
+                
+            
+            }
+        </style>
+        <script>
+            function cal(){
+                total_marks=500;
+                comp=parseFloat(document.getElementById("comp").value);
+                eng=parseFloat(document.getElementById("eng").value);
+                isl=parseFloat(document.getElementById("isl").value);
+                sci=parseFloat(document.getElementById("sci").value);
+               math=parseFloat(document.getElementById("math").value);
+
+               Mark_obtain=comp+eng+isl+sci+math;
+               percentage=(Mark_obtain*100)/total_marks;
+               alert( "Your percentage is"+percentage + "%") ;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="cal">
+        Enter Computer No <input type="text" id="comp" required/> 
+Enter English No<input type="text" id="eng" required/>
+Enter Islamiat No <input type="text" id="isl" required/> 
+Enter Science No<input type="text" id="sci" required/>
+Enter Math No <input type="text" id="math" required/>
+<input type="button" onclick="cal();"  value="calculate"/>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function cal(){
+ var  mySentence = document.getElementById('s').value;
+ 
+var words = mySentence.split(" ");
+
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+}
+
+
+console.log(words.join(" "));
+}
+        </script>
+    </head>
+    <body>
+        Enter String Value <input type="text" name="s" id="s"/>
+        <input type="button" onclick="cal();"  value="Enter"/>
+    </body>
+</html>
