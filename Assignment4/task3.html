@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <h1>ENTER YOUR PASSWORD</h1>
+        <form onsubmit ="return verifyPassword()">
+            
+            <td> Enter Password </td>
+            <input type = "password" id = "pswd" value = "" pattern="^[a-zA-Z].*"  oninvalid="setCustomValidity('First letter should be an Alphabets ')"> 
+            <span id = "message" style="color:red"> </span> 
+            <span id = "msg" style="color:green"> </span><br> <br>
+            <input type = "submit" value = "Submit">
+
+    </body>
+    <script src="task3.js"></script>
+</html>

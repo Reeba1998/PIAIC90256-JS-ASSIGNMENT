@@ -26,21 +26,21 @@
                alert( "Your percentage is"+percentage + "%") ;
 
                switch(true) {
-case (percentage <= 100 && percentage>= 90):
+case (percentage <= 100 && percentage>= 80):
    alert("your grade is A+");
    
     break;
-case (percentage <= 89 && percentage >= 80):
-    alert("A");
-     break;
 case (percentage <= 79 && percentage >= 70):
-    alert("B");
+    alert("your grade is A");
      break;
-   case (percentage <= 69 && percentage >= 60):
-    alert("C");
+case (percentage <= 69 && percentage >= 60):
+    alert("your grade is B");
      break;
-case (percentage <= 59 && percentage >= 0):
-    alert("D");
+   case (percentage <= 59 && percentage >= 40):
+    alert("your grade is C");
+     break;
+case (percentage <= 39 && percentage >= 0):
+    alert("your grade is F");
     break;}
 
             }

@@ -1,3 +1,3 @@
 var dollar=10;
 var saudi=25;
-document.getElementById('pkr').innerHTML= "Total Currency in PKR : "+(dollar*155 + saudi*41);
+document.write( "Total Currency in PKR : "+(dollar*155 + saudi*41));
